@@ -1,22 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
 
-const soundbytes = [
-  {
-    id: "heater-1",
-    text: "Q",
-    src: "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3",
-    string: "Heater 1"
-  }
-]
-
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       nowPlaying: 'Nothing'
     }
-
     this.handleInstrumentChange = this.handleInstrumentChange.bind(this);
   }
 
@@ -32,6 +22,7 @@ class App extends Component {
             Now Playing: {this.state.nowPlaying}
           </div>
 
+          {/*Optimize this part*/}
           <DrumPad
             id="heater-1"
             text="Q"
