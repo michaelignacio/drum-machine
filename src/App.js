@@ -24,6 +24,7 @@ class App extends Component {
           id={item.id}
           text={item.text}
           src={item.src}
+          name={item.name}
           onInstrumentChange={this.handleInstrumentChange}
           >
         </DrumPad>
@@ -33,8 +34,9 @@ class App extends Component {
     return (
       <div className="App">
         <div id="drum-machine">
+          <h1>808s</h1>
           <div id="display">
-            Now Playing: {this.state.nowPlaying}
+            <em>{this.state.nowPlaying}</em>
           </div>
           <div className="drum-pad-area">
             {listItems}

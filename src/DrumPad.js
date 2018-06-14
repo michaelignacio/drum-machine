@@ -20,14 +20,14 @@ class DrumPad extends Component {
   handleClick() {
     let audio = document.getElementById(this.props.text);
     audio.play();
-    this.props.onInstrumentChange(this.props.id);
+    this.props.onInstrumentChange(this.props.name);
   }
 
   handleKeyPress(event) {
     if (event.key === this.props.text.toLowerCase()) {
       let audio = document.getElementById(this.props.text);
       audio.play();
-      this.props.onInstrumentChange(this.props.id);
+      this.props.onInstrumentChange(this.props.name);
     }
   }
 
