@@ -28,10 +28,6 @@
 }
 
 body {
-  min-height: 100vh;
-}
-
-body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,5 +74,13 @@ body {
   .drum-pad {
     width: 27%;
     height: 90px;
+  }
+}
+
+/* #Tablet and Higher
+ ================================================== */
+@media (min-width: 768px) {
+  body {
+    min-height: 100vh;
   }
 }
