@@ -27,29 +27,40 @@
   to { transform: rotate(360deg); }
 }
 
-.drum-machine {
-  /*display: flex;*/
-  /*justify-content: center;*/
+body {
+  min-height: 100vh;
 }
 
-.App {
+body {
   display: flex;
   justify-content: center;
-  /*align-items: center;
-  height: 100%;*/
+  align-items: center;
 }
 
 .drum-pad {
-  width: 125px;
+  width: 132px;
   height: 125px;
-  border: 1px solid #D7DBDD;
+  border: 2px solid #D7DBDD;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 10px;
+  font-size: 1em;
 }
 
 .drum-pad-area {
   display: flex;
   flex-wrap: wrap;
-  width: 400px;
+  width: 470px;
+}
+
+#display {
+  margin-bottom: 40px;
+}
+
+.drum-pad {
+  background-color: #242527;
+  border-color: #E7201B;
+  color: #fff;
+  border: 1px solid #e7201b;
 }

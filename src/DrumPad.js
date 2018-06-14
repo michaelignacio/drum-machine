@@ -33,7 +33,7 @@ class DrumPad extends Component {
 
   render() {
     return (
-      <div 
+      <button 
         className="drum-pad" 
         id={this.props.id} 
         onClick={this.handleClick}
@@ -46,7 +46,7 @@ class DrumPad extends Component {
           className="clip"
         >
         </audio>
-      </div>
+      </button>
     );
   }
 }
