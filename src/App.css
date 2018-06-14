@@ -40,27 +40,29 @@ body {
 .drum-pad {
   width: 132px;
   height: 125px;
-  border: 2px solid #D7DBDD;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 10px;
   font-size: 1em;
+  background-color: #242527;
+  color: #fff;
+  border: 3px solid #f51800;
 }
 
 .drum-pad-area {
-  display: flex;
   flex-wrap: wrap;
   width: 470px;
+  display: flex;
+  justify-content: center;
 }
 
 #display {
   margin-bottom: 40px;
 }
 
-.drum-pad {
-  background-color: #242527;
-  border-color: #E7201B;
-  color: #fff;
-  border: 1px solid #e7201b;
+/*use sass*/
+
+#drum-machine {
+  padding: 10px 20px 40px;
 }
