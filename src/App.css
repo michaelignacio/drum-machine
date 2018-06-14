@@ -27,17 +27,29 @@
   to { transform: rotate(360deg); }
 }
 
+.drum-machine {
+  /*display: flex;*/
+  /*justify-content: center;*/
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  /*align-items: center;
+  height: 100%;*/
+}
+
 .drum-pad {
-  width: 150px;
-  height: 150px;
+  width: 125px;
+  height: 125px;
   border: 1px solid #D7DBDD;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .drum-pad-area {
   display: flex;
   flex-wrap: wrap;
-
-  width: 600px;
-  padding: 5px;
+  width: 400px;
 }
