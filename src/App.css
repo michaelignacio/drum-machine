@@ -48,6 +48,7 @@ body {
   background-color: #242527;
   color: #fff;
   border: 3px solid #f51800;
+  border-radius: 100%;
 }
 
 .drum-pad-area {
@@ -65,4 +66,17 @@ body {
 
 #drum-machine {
   padding: 10px 20px 40px;
+}
+
+/* #Mobile
+ ================================================== */
+@media (max-width: 767px) {
+  .drum-pad-area {
+    width: 100%;
+  }
+
+  .drum-pad {
+    width: 27%;
+    height: 90px;
+  }
 }
